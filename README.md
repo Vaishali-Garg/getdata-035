@@ -1,5 +1,5 @@
-Original Data: Human activity recognition using smartphones dataset 1.0
-The data contains activity monitoring data on a group of 30 subjects. The data has been divided into train and test.  
+Original Data: Human activity recognition using smartphones dataset 1.0 
+The data contains activity monitoring data on a group of 30 subjects. The data has been divided into train and test. 
 Apart from the train and test data, we have activity_labels.txt, features_info.txt and features.txt. 
 We start the analysis by loading the files individually in R and study their dimentions. For example, the files x.test and x.train have dimentions of 2947/561 and 7352/561 respectively.  
 y.test and y.train contain activity codes in the range of 1 to 6, this maps with the activity_labels.txt files. 
