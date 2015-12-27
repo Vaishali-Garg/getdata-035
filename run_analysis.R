@@ -30,3 +30,8 @@ activitydata <- activitydata[order(activitydata$Subject),]
 activityfilter <- activitydata[, grepl("Subject|Activity|mean|std", names(activitydata))]
 
 activityfinal <- aggregate(activityfilter, by = list(activityfilter$Subject, activityfilter$Activity), FUN = mean)
+activityclean <- activityfinal[,c(-3,-4)]
+names(activityclean)[names(activityclean)=="Group.1"] <- "Subject"
+names(activityclean)[names(activityclean)=="Group.2"] <- "Activity"
+
+write.table(activityclean, data = "course4proj.txt", row.name=FALSE )
